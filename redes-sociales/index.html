@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Proyecto Studio Bootstrap5</title>
+  </head>
+
+  <body class="fondo-pagina">
+    <nav class="navbar pt-1 pb-0">
+      <div class="container-fluid d-flex flex-column flex-lg-row align-items-center">
+    
+        <!-- Primera fila: Logo, Barra de búsqueda (oculta en sm), Iconos de la derecha -->
+        <div class="d-flex align-items-center flex-grow-1 w-100">
+          <!-- Logo -->
+          <a class="navbar-brand me-3 d-flex align-items-center" href="#">
+            <i class="fa-regular fa-b fw-bold fs-5 bg-white p-2 rounded-2"></i>
+          </a>
+    
+          <!-- Barra de búsqueda (se oculta en sm, aparece en md y lg) -->
+          <form class="flex-grow-1 d-none d-md-flex" role="search">
+            <div class="position-relative ws-50 busqueda">
+              <input type="search" class="busqueda form-control ps-5 border-0 shadow-none rounded-4 w-100"
+                aria-label="Search" placeholder="Buscar">
+              <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-2 text-white"></i>
+            </div>
+          </form>
+    
+          <!-- Iconos de la derecha -->
+          <div class="d-flex align-items-center ms-auto">
+            <a class="navbar-brand me-3 d-flex align-items-center" href="#">
+              <img src="./img/foto-mia.jpg" alt="Perfil" class="rounded-circle"
+                style="width: 40px; height: 40px; object-fit: cover;">
+              <span class="ms-2 text-secondary">Boti</span>
+            </a>
+            <a class="navbar-brand me-3 d-flex align-items-center" href="#">
+              <div class="d-flex justify-content-center align-items-center cuadrados rounded-circle"
+                style="width: 40px; height: 40px;">
+                <i class="bi bi-grid-fill iconos"></i>
+              </div>
+            </a>
+            <a class="navbar-brand me-3 d-flex align-items-center" href="#">
+              <div class="d-flex justify-content-center align-items-center cuadrados rounded-circle"
+                style="width: 40px; height: 40px;">
+                <i class="fa-solid fa-comment iconos"></i>
+              </div>
+            </a>
+            <a class="navbar-brand me-3 d-flex align-items-center" href="#">
+              <div class="d-flex justify-content-center align-items-center cuadrados rounded-circle"
+                style="width: 40px; height: 40px;">
+                <i class="fa-solid fa-bell iconos"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Segunda fila: Iconos del centro (visible en md, oculto en lg) -->
+        <div class="d-md-flex d-lg-none justify-content-center w-100  mt-md-2 mt-sm-4">
+          <ul class="nav d-flex gap-4">
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-house-chimney text-blue fs-5 border-bottom border-primary border-2"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-regular fa-flag iconos fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-brands fa-youtube iconos fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-store iconos fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-user-group iconos fs-5"></i>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Iconos centrados  -->
+        <div class="position-absolute start-50 translate-middle-x d-none d-lg-block">
+          <ul class="nav d-flex gap-4">
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-house-chimney text-blue fs-5 border-bottom border-primary border-2"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-regular fa-flag iconos fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-brands fa-youtube iconos fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-store iconos fs-5"></i>
+            </li>
+            <li class="nav-item">
+              <i class="nav-link fa-solid fa-user-group iconos fs-5"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+    <main class="container-fluid d-flex justify-content-between">
+      <!-- Menú Izquierdo -->
+      <div class="w-25 mt-3 izquierda d-lg-block d-none ">
+        <ul class="list-group izquierda align-items-lg-start">
+          <li class="list-group-item">
+            <img src="./img/foto-mia.jpg" alt="Perfil" class="rounded-circle"
+              style="width: 40px; height: 40px; object-fit: cover;">
+            Javier Pérez
+          </li>
+          <li class="list-group-item">
+            <i class="nav-link fa-solid fa-user-group  fs-5"></i>
+            Amigos
+          </li>
+          <li class="list-group-item">
+            <i class="nav-link fa-solid fa-flag  fs-5"></i>
+            Páginas
+          </li>
+          <li class="list-group-item">
+            <i class="fa-solid fa-layer-group "></i>
+            Grupos
+          </li>
+          <li class="list-group-item">
+            <i class="nav-link fa-solid fa-store fs-5"></i>
+            MarketPlace
+          </li>
+          <li class="list-group-item">
+            <i class="nav-link fa-brands fa-youtube  fs-5"></i>
+            Watch
+          </li>
+          <li class="list-group-item">
+            <i class="nav-link fa-solid fa-calendar  fs-5"></i>
+            Eventos
+          </li>
+        </ul>
+        <ul class="izquierda mt-4">
+          <li class="list-group-item">Privacidad Condiciones</li>
+          <li class="list-group-item">Publicidad Opciones de anuncios</li>
+          <li class="list-group-item">Cookies Más</li>
+        </ul>
+      </div>
+
+      <!-- Centro: Contenedor de tarjetas -->
+      <div class="d-flex flex-column align-items-center w-100 mt-3">
+        <!-- Primera Tarjeta -->
+        <div class="card w-75 centro mb-3">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <img src="./img/foto-mia.jpg" alt="Perfil"
+                class="rounded-circle me-2"
+                style="width: 40px; height: 40px; object-fit: cover;">
+              <input type="search"
+                class="busqueda form-control border-0 shadow-none rounded-4 w-100"
+                aria-label="Search" placeholder="¿Qué estás pensando, Javi?">
+            </div>
+            <br>
+            <hr>
+            <ul class="list-group list-group-horizontal d-flex justify-content-around centro">
+              <li class="list-group-item border-0 iconos fs-6 fs-md-5">
+                <i class="fa-solid fa-video fs-6 fs-md-5 me-1"></i> Video
+              </li>
+              <li class="list-group-item border-0 iconos fs-6 fs-md-5">
+                <i class="fa-solid fa-camera fs-6 fs-md-5 me-1"></i> Foto
+              </li>
+              <li class="list-group-item border-0 iconos fs-6 fs-md-5">
+                <i class="fa-solid fa-smile fs-6 fs-md-5 me-1"></i> Sentimientos
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+
+        <!-- Segunda Tarjeta -->
+        <div class="card w-75 centro">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <img src="./img/persona3.jpg" alt="Perfil"
+                class="rounded-circle me-2"
+                style="width: 40px; height: 40px; object-fit: cover;">
+              <p class="iconos mt-3">Marilyn Monroe <br> <small
+                  class="iconos mt-5 ms-2"> 1hr</small></p>
+            </div>
+            <p class="iconos">Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit.</p>
+            <img src="./img/paisaje1.jpg" alt="montana" class="w-100">
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <i class="fa-solid fa-heart ms-4" style="color: #ff0000;"></i>
+              <p class="iconos ms-lg-3">60</p>
+            </div>
+            <div class="comentarios">
+              <p class="iconos">70 comentarios</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-around">
+            <div class="d-flex iconos ">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <p class="ms-3">Me gusta</p>
+            </div>
+            <div class="d-flex iconos">
+              <i class="fa-solid fa-comment"></i>
+              <p class="ms-3">Comentar</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card w-75 centro mt-3 mb-4">
+          <div class="card-body">
+            <div class="d-flex align-items-center">
+              <img src="./img/persona4.jpg" alt="Perfil"
+                class="rounded-circle me-2"
+                style="width: 40px; height: 40px; object-fit: cover;">
+              <p class="iconos mt-3">Richard Guere <br> <small
+                  class="iconos mt-5 ms-2"> 1hr</small></p>
+            </div>
+            <p class="iconos">Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit.</p>
+            <img src="./img/paisaje2.jpg" alt="montana" class="w-100">
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <i class="fa-solid fa-heart ms-4" style="color: #ff0000;"></i>
+              <p class="iconos ms-lg-3">60</p>
+            </div>
+            <div class="comentarios">
+              <p class="iconos">70 comentarios</p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-around">
+            <div class="d-flex iconos ">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <p class="ms-3">Me gusta</p>
+            </div>
+            <div class="d-flex iconos">
+              <i class="fa-solid fa-comment"></i>
+              <p class="ms-3">Comentar</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="w-25 mt-3 publicidad d-none d-lg-block ">
+        <!-- Sección de Publicidad -->
+        <div class="publicidad mb-4">
+          <h2 class="iconos">Publicidad</h2>
+          <img src="./img/ad1.jpg" alt="pc" class="rounded img-derecha mb-3">
+          <img src="./img/ad2.jpg" alt="gente" class="rounded img-derecha">
+        </div>
+      
+        <!-- Sección de Contactos -->
+        <div class="contactos">
+          <h2 class="iconos">Contactos</h2>
+
+          <ul class="list-group">
+            <li class="list-group-item d-flex align-items-center gap-3 derecha">
+              <img src="./img/foto-mia.jpg" alt="Perfil" class="rounded-circle"
+                style="width: 40px; height: 40px; object-fit: cover;">
+              Javier Pérez
+            </li>
+            <li class="list-group-item d-flex align-items-center gap-3 derecha">
+              <img src="./img/persona3.jpg" alt="Perfil" class="rounded-circle"
+                style="width: 40px; height: 40px; object-fit: cover;">
+              Marilyn Monroe
+            </li>
+            <li class="list-group-item d-flex align-items-center gap-3 derecha">
+              <img src="./img/persona4.jpg" alt="Perfil" class="rounded-circle"
+                style="width: 40px; height: 40px; object-fit: cover;">
+              Richard Guere
+            </li>
+            <li class="list-group-item d-flex align-items-center gap-3 derecha">
+              <img src="./img/persona5.jpg" alt="Perfil" class="rounded-circle"
+                style="width: 40px; height: 40px; object-fit: cover;">
+              Michael Jackson
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+
+</html>
